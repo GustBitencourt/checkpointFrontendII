@@ -1,0 +1,185 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Criando variavel de cor na raíz */
+:root {
+    --primary-color: #eef2fc;
+    --secondary-color: #212121;
+}
+
+/* Classe do tema escuro com as variaveis da sua cor */
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    transition: ease-in-out 1s;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding: 1.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* deixar o conteúdo com distancias iguais na div */
+}
+
+#header__nav--logo {
+    width: 6.25rem;
+    cursor: pointer; /* Mudar o cursor ao passar sobre o logo da página */
+    border-radius: 100%;
+}
+#header__nav--logo:hover {
+    transform: scale(1.5);
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 0.625rem 1.25rem;
+}
+
+.header__nav--action {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: ease-in-out 0.5s;    
+}
+
+.header__nav--action:hover {
+    color: #ff6100;
+}
+
+ul { /* aproximar os hiperlinks do botão tema */
+    flex: 1;
+    text-align: right;
+}
+
+#header__nav--theme {
+    width: 1.875em;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:50%;
+    bottom:30%;
+    transform: translate(-50%);
+    width:50%;    
+    padding:2rem;
+    z-index:2;
+    background-color: #fc651f;
+    border-radius: 0.625rem;
+}
+
+.form input {
+    margin: 0.1rem;
+    padding: 0.4rem;
+}
+
+.form--button {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-weight: bold;
+    color: skyblue;
+    transition: ease-in-out 0.5s;
+    border-radius: 1rem;
+}
+.form--button:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+#section__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem;
+    gap: 2rem;
+}
+
+
+
+.div__buttons {    
+    justify-content: center;
+    position: relative;
+    margin: auto;        
+}
+
+.div__buttons--card{
+    padding: 0.2rem;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.div__buttons--card:hover{
+    opacity: 0.7;
+    background-color: #fc651f;
+}
+
+#cards__container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:500px;
+    gap:35px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.cards {
+    max-width:1rem;    
+    animation-duration: 1s;
+}
+
+
+.editar__card{
+    padding:0.5rem;
+    border: 0.3rem dotted #00ff22;
+    transform: scale(0.950);
+}
+
+.excluir-card{
+    padding:0.5rem;
+    border: 0.3rem solid #ff0000;
+    transform: scale(0.950);
+}
+
+.fotoMembro {
+    width: 15rem;
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 1rem;  
+}
+
+.logoSocial {
+    width: 5rem;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 0.3rem;  
+}
+.logoSocial:hover{
+    transform: scale(1.1);
+}
+
+
+
